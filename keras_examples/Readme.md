@@ -30,11 +30,12 @@ model.compile(loss='binary_crossentropy',
 ```
 
 Basically, the model architecture includes:
-1. Embedding Layer: Takes words (in this case numbers!) from a vocabulary as input and embeds them as vectors into a lower dimensional space. [Here](http://sebastianruder.com/word-embeddings-1/) there is a detailed description of Embeddings.
-2. Convolution Layer: Convolution operator for filtering neighborhoods of one-dimensional inputs.
-3. MaxPooling: Max pooling operation for temporal data.
-4. LSTM Layer: Long-Short Term Memory unit - Hochreiter 1997. This is an [excellent tutorial to describe how it works!](http://deeplearning.net/tutorial/lstm.html)
-5. Output node with Activation Sigmoid: Returns 1 (positive sentiment) or 0 (negative sentiment)
+
+ 1. Embedding Layer: Takes words (in this case numbers!) from a vocabulary as input and embeds them as vectors into a lower dimensional space. [Here](http://sebastianruder.com/word-embeddings-1/) there is a detailed description of Embeddings.
+ 2. Convolution Layer: Convolution operator for filtering neighborhoods of one-dimensional inputs.
+ 3. MaxPooling: Max pooling operation for temporal data.
+ 4. LSTM Layer: Long-Short Term Memory unit - Hochreiter 1997. This is an [excellent tutorial to describe how it works!](http://deeplearning.net/tutorial/lstm.html)
+ 5. Output node with Activation Sigmoid: Returns 1 (positive sentiment) or 0 (negative sentiment)
 
 Loss is calculated with ```binary_crossentropy``` optimized with ```adam``` and metric used is ```accuracy```.
 
