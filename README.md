@@ -5,8 +5,8 @@ Workshop NLP
 
 * Python environment with Virtualenv
 
-### Ubuntu:
 ```
+### Ubuntu OS
 sudo apt install virtualenv
 sudo apt install python-dev
 ```
