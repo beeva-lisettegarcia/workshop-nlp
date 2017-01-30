@@ -18,5 +18,5 @@ pip install -r requirements.txt
 
 * nltk data:
 ```
-python -c "import nltk; nltk.download('punkt')"
+python -c "import nltk; nltk.download('all')"
 ```
